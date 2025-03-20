@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2></h2>
-    <form action="#" method="post">
+    <form action="action.php" method="post">
         <fieldset>
             <legend>Techer Information</legend>
             <table>

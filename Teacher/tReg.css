@@ -1,4 +1,4 @@
-/* 1. Simple Selectors (Element, ID, Class) */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -22,13 +22,13 @@ h2 {
     border-radius: 4px;
 }
 
-/* 2. Combinator Selectors */
+
 fieldset legend {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-/* Styling table inside fieldset */
+
 fieldset table {
     width: 100%;
 }
@@ -37,7 +37,7 @@ fieldset table td {
     padding: 8px;
 }
 
-/* 3. Pseudo-Class Selectors */
+
 input:focus {
     border-color: #28a745;
     outline: none;
@@ -47,13 +47,13 @@ input[type="submit"]:hover {
     background-color: #218838;
 }
 
-/* 4. Pseudo-Element Selectors */
+
 legend::first-letter {
     font-size: 1.5em;
     color: #28a745;
 }
 
-/* 5. Attribute Selectors */
+
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -61,10 +61,10 @@ input[type="tel"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: inline-block; /* Demonstrating inline-block */
+    display: inline-block; 
 }
 
-/* Position Property */
+
 .position-example {
     position: absolute;
     top: 10px;
@@ -75,7 +75,7 @@ input[type="tel"] {
     border-radius: 4px;
 }
 
-/* Max Width */
+
 form {
     background: #fff;
     padding: 20px;
@@ -87,18 +87,18 @@ form {
     z-index: 10;
 }
 
-/* Overflow */
+
 .overflow-example {
     width: 300px;
     height: 50px;
     border: 2px solid #000;
     padding: 10px;
-    overflow: hidden; /* Hide overflow content */
+    overflow: hidden; 
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-/* Margins & Paddings */
+
 input[type="submit"] {
     width: 100%;
     background-color: #28a745;
@@ -111,7 +111,7 @@ input[type="submit"] {
     margin-top: 10px;
 }
 
-/* Borders */
+
 input {
     border: 1px solid #ccc;
     border-radius: 4px;
