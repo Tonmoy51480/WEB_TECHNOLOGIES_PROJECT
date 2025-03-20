@@ -1,38 +1,59 @@
+/* 1. Simple Selectors (Element, ID, Class) */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+h2 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-fieldset {
-    border: none;
-    padding: 10px;
+#gender {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-legend {
+/* 2. Combinator Selectors */
+fieldset legend {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-table {
+/* Styling table inside fieldset */
+fieldset table {
     width: 100%;
 }
 
-td {
+fieldset table td {
     padding: 8px;
 }
 
+/* 3. Pseudo-Class Selectors */
+input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* 4. Pseudo-Element Selectors */
+legend::first-letter {
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+/* 5. Attribute Selectors */
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -40,12 +61,44 @@ input[type="tel"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: inline-block; /* Demonstrating inline-block */
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
+/* Position Property */
+.position-example {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
 }
 
+/* Max Width */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* Overflow */
+.overflow-example {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #000;
+    padding: 10px;
+    overflow: hidden; /* Hide overflow content */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Margins & Paddings */
 input[type="submit"] {
     width: 100%;
     background-color: #28a745;
@@ -55,8 +108,11 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 1em;
     border-radius: 4px;
+    margin-top: 10px;
 }
 
-input[type="submit"]:hover {
-    background-color: #218838;
+/* Borders */
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }

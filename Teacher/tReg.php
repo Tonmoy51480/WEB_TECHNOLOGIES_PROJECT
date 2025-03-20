@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration</title>
+    <title>Techer Registration</title>
     <link rel="stylesheet" href="tReg.css">
 </head>
 <body>
-    <h2>Student Registration</h2>
+    <h2></h2>
     <form action="#" method="post">
         <fieldset>
-            <legend>Student Information</legend>
+            <legend>Techer Information</legend>
             <table>
                 <tr>
                     <td><label for="first_name">First Name:</label></td>
@@ -49,7 +49,7 @@
                     <td><input type="text" id="institution_name" name="institution_name" required></td>
                 </tr>
                 <tr>
-                    <td><label for="student_id">Student ID:</label></td>
+                    <td><label for="student_id">Techer ID:</label></td>
                     <td><input type="text" id="student_id" name="student_id" required></td>
                 </tr>
                 <tr>
