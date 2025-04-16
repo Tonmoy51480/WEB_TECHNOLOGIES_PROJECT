@@ -40,13 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) {
-            showError(email, "Enter a valid email address.");
-            isValid = false;
-        }
+        //if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) {
+           // showError(email, "Enter a valid email address.");
+            i//sValid = false;
+        //}
+        const emailValue = email.value.trim();
 
-        if (!/^\d{10}$/.test(phone.value)) {
-            showError(phone, "Enter a valid 10-digit phone number.");
+// Check if email contains '@'
+if (!emailValue.includes("@")) {
+    showError(email, "Email must contain '@' symbol.");
+    isValid = false;
+}
+// Check if email contains '.com'
+else if (!emailValue.endsWith(".com")) {
+    showError(email, "Email must end with '.com'.");
+    isValid = false;
+}
+// Check if email contains only lowercase letters
+else if (/[A-Z]/.test(emailValue)) {
+    showError(email, "Email must use only lowercase letters.");
+    isValid = false;
+}
+
+
+        if (!/^\d{11}$/.test(phone.value)) {
+            showError(phone, "Enter a valid 11-digit phone number.");
             isValid = false;
         }
 

@@ -11,7 +11,7 @@
     <h2></h2>
     <form action="#" method="post">
         <fieldset>
-            <legend>Techer Information</legend>
+            <legend>Teacher Information</legend>
             <table>
                 <tr>
                     <td><label for="first_name">First Name:</label></td>
@@ -49,8 +49,8 @@
                     <td><input type="text" id="institution_name" name="institution_name" required></td>
                 </tr>
                 <tr>
-                    <td><label for="student_id">Techer ID:</label></td>
-                    <td><input type="text" id="student_id" name="student_id" required></td>
+                    <td><label for="teacher_id">Teacher ID:</label></td>
+                    <td><input type="textteacher" teacher" required></td>
                 </tr>
                 <tr>
                     <td><label for="city">City:</label></td>
