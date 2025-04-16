@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) {
+         if(!email.vale.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+        //if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.value)) 
+            {
             showError(email, "Enter a valid email address.");
             isValid = false;
         }
