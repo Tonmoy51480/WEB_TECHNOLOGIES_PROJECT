@@ -1,14 +1,8 @@
 <?php
 session_start();
-<<<<<<< Updated upstream
-require_once(__DIR__ . '/../../model/TeacherDB_mysqli.php');
-
-=======
-require_once __DIR__ . '/../model/TeacherDB_mysqli.php';
->>>>>>> Stashed changes
-
+require_once __DIR__ . '/../../model/TeacherDB_mysqli.php';
 if (!isset($_SESSION['teacher']['teacherid'])) {
-    header("Location: login.php");
+    header("Location: ../login.php");
     exit();
 }
 
@@ -17,7 +11,7 @@ $teacher = $db->findTeacherByTeacherId($_SESSION['teacher']['teacherid']);
 
 if (!$teacher) {
     session_destroy();
-    header("Location: login.php");
+    header("Location: ../login.php");
     exit();
 }
 ?>
