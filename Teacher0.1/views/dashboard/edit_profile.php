@@ -1,7 +1,11 @@
 <?php
 session_start();
+<<<<<<< Updated upstream
 require_once(__DIR__ . '/../../model/TeacherDB_mysqli.php');
 
+=======
+require_once __DIR__ . '/../model/TeacherDB_mysqli.php';
+>>>>>>> Stashed changes
 
 if (!isset($_SESSION['teacher']['teacherid'])) {
     header("Location: login.php");
