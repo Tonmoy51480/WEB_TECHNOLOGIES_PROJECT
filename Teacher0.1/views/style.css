@@ -1,0 +1,179 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Container */
+.form-container {
+  background-color: #fff;
+  padding: 35px 40px 45px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 480px;
+  font-size: 16px;
+}
+
+/* Form title */
+.form-title {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+/* Error box */
+.error-box {
+  background-color: #ffebeb;
+  border: 1px solid #ff6b6b;
+  color: #b71c1c;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Inputs and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.25s ease;
+  font-family: inherit;
+  color: #444;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+/* Textarea height */
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+label[for="male"],
+label[for="female"],
+label[for="other"] {
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Show password checkbox container */
+.show-password {
+  margin-top: 12px;
+  user-select: none;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.show-password input[type="checkbox"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  margin-top: 28px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(90, 103, 216, 0.4);
+  letter-spacing: 0.8px;
+}
+
+input[type="submit"]:hover {
+  background-color: #434190;
+  box-shadow: 0 8px 18px rgba(67, 65, 144, 0.6);
+}
+
+/* Responsive tweaks */
+@media (max-width: 520px) {
+  .form-container {
+    padding: 30px 25px 40px;
+  }
+}
+
+
+
+
+/*
+
+CREATE TABLE teachers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fname VARCHAR(100),
+    lname VARCHAR(100),
+    email VARCHAR(255) UNIQUE,
+    birthday DATE,
+    gender VARCHAR(10),
+    address TEXT,
+    teacherid VARCHAR(50) UNIQUE,
+    phone VARCHAR(20),
+    password VARCHAR(255),
+    image VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+*/
