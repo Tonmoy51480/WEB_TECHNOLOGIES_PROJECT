@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    margin: 10px 0 20px 0;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+button[type="button"] {
+    background-color: #2196F3;
+}
+
+button[type="button"]:hover {
+    background-color: #0b7dda;
+}
